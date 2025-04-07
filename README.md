@@ -128,9 +128,6 @@
 3. **Read Predictions**: Detailed predictions appear inside each card.  
    ![Predictions](screenshots/prediction.png)
 
-4. **Summary**: Final results show at the bottom after selecting all 3 cards.  
-   ![Summary](screenshots/summary.png)
-
 ---
 
 ## Technologies
