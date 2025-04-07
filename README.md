@@ -138,3 +138,47 @@
   - Loop Statements (`for`, `while`)
   - Arrays & Strings
   - Functions & Modular Programming
+
+Note on MinGW-64 versions
+Make sure you have a modern version of MinGW-W64 (not mingw). The best place to get it is from the W64devkit from https://github.com/skeeto/w64devkit/releases or the version installed with the raylib installer
+
+If you have installed raylib from the installer
+Make sure you have added the path
+
+C:\raylib\w64devkit\bin
+
+To your path environment variable so that the compiler that came with raylib can be found.
+
+DO NOT INSTALL ANOTHER MinGW-W64 from another source such as msys2, you don't need it.
+
+Microsoft Visual Studio
+Run build-VisualStudio2022.bat
+double click the .sln file that is generated
+develop your game
+you are good to go
+Linux Users
+CD into the build folder
+run ./premake5 gmake2
+CD back to the root
+run make
+you are good to go
+MacOS Users
+CD into the build folder
+run ./premake5.osx gmake2
+CD back to the root
+run make
+you are good to go
+Output files
+The built code will be in the bin dir
+
+Working directories and the resources folder
+The example uses a utility function from path_utils.h that will find the resources dir and set it as the current working directory. This is very useful when starting out. If you wish to manage your own working directory you can simply remove the call to the function and the header.
+
+Changing to C++
+Simply rename src/main.c to src/main.cpp and re-run the steps above and do a clean build.
+
+Using your own code
+Simply remove src/main.c and replace it with your code, and re-run the steps above and do a clean build.
+
+Building for other OpenGL targets
+If you need to build for a different OpenGL version than the default (OpenGL 3.3) you can specify an OpenGL version in your premake command line. Just modify the bat file or add the following to your command line
