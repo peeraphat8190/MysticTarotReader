@@ -68,8 +68,7 @@
 ---
 
 ## ผู้พัฒนา (Developer)
-- **ชื่อ**: [Peeraphat]  
-- **รหัสนักศึกษา**: [1670903192]  
+- **ชื่อ**: [Peeraphat]   
 - **วิชา**:  CE213
 - **GitHub**: (https://github.com/peeraphat8190)
 
