@@ -13,8 +13,8 @@
 #define NUM_CARDS 3
 #define TOTAL_CARDS 22
 #define MAX_LINES 8
-#define CARD_WIDTH 350      // ปรับขนาดกว้างลดลง
-#define CARD_HEIGHT 550     // ปรับความสูงลดลง
+#define CARD_WIDTH 350      
+#define CARD_HEIGHT 550     
 #define DESC_FONT_SIZE 20
 #define LINE_SPACING 26
 
