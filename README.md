@@ -48,10 +48,10 @@
    ![หน้าจอเริ่มต้น](screenshots/start.png)
 
 2. **เลือกไพ่**: คลิกไพ่ตามลำดับ (Past → Present → Future)  
-   ![เลือกไพ่](screenshots/select.png)
+   ![เลือกไพ่](screenshots/prediction.png)
 
 3. **อ่านคำทำนาย**: คำทำนายจะแสดงในกรอบการ์ดแต่ละใบ  
-   ![คำทำนาย](screenshots/prediction.png)
+   ![คำทำนาย](screenshots/select.png)
 
 ---
 
