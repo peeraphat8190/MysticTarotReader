@@ -1,111 +1,144 @@
-# Raylib-Quickstart
-A simple cross platform template for setting up a project with the bleeding edge raylib code.
-Works with C or C++.
+```markdown
+# Mystic Tarot Reader 🔮  
+**โปรแกรมดูดวงไพ่ยิปซีแบบอินเทอร์แอคทีฟ**  
 
-## Supported Platforms
-Quickstart supports the main 3 desktop platforms:
-* Windows
-* Linux
-* MacOS
+## 📜 เนื้อหา (Table of Contents)
+- [คุณสมบัติหลัก (Features)](#คุณสมบัติหลัก-features)
+- [การติดตั้ง (Installation)](#การติดตั้ง-installation)
+- [วิธีการใช้งาน (Usage)](#วิธีการใช้งาน-usage)
+- [เทคนิคที่ใช้ (Technologies)](#เทคนิคที่ใช้-technologies)
+- [ผู้พัฒนา (Developer)](#ผู้พัฒนา-developer)
 
-# Naming projects
-Do not name your game project 'raylib', it will conflict with the raylib library.
+---
 
-# VSCode Users (all platforms)
-*Note* You must have a compiler toolchain installed in addition to vscode.
+## คุณสมบัติหลัก (Features)
+- 🃪 สุ่มไพ่ยิปซี 3 ใบ (อดีต-ปัจจุบัน-อนาคต)
+- 🔍 แสดงคำทำนายละเอียดในกรอบการ์ด
+- 🎨 อินเทอร์เฟซกราฟิกสวยงาม (GUI) ด้วย Raylib
+- 🎲 สีพื้นหลังการ์ดสุ่มแบบพาสเทล
+- 📊 แถบสรุปผลลัพธ์แบบเรียลไทม์
 
-* Download the quickstart
-* Rename the folder to your game name
-* Open the folder in VSCode
-* Run the build task ( CTRL+SHIFT+B or F5 )
-* You are good to go
+---
 
-# Windows Users
-There are two compiler toolchains available for windows, MinGW-W64 (a free compiler using GCC), and Microsoft Visual Studio
-## Using MinGW-W64
-* Double click the `build-MinGW-W64.bat` file
-* CD into the folder in your terminal
-* run `make`
-* You are good to go
+## การติดตั้ง (Installation)
+### ข้อกำหนด (Prerequisites)
+- [CMake](https://cmake.org/) เวอร์ชัน 3.10 ขึ้นไป
+- [Raylib](https://www.raylib.com/) เวอร์ชัน 4.5 ขึ้นไป
 
-### Note on MinGW-64 versions
-Make sure you have a modern version of MinGW-W64 (not mingw).
-The best place to get it is from the W64devkit from
-https://github.com/skeeto/w64devkit/releases
-or the version installed with the raylib installer
-#### If you have installed raylib from the installer
-Make sure you have added the path
+### ขั้นตอน (Steps)
+1. โคลนโปรเจกต์:
+   ```bash
+   git clone https://github.com/yourusername/mystic-tarot-reader.git
+   ```
+2. สร้างโฟลเดอร์ build และคอมไพล์:
+   ```bash
+   cd mystic-tarot-reader
+   mkdir build && cd build
+   cmake ..
+   cmake --build . --config Release
+   ```
+3. รันโปรแกรม:
+   - Windows: `build/Release/FinalProject.exe`
+   - Linux/macOS: `./FinalProject`
 
-`C:\raylib\w64devkit\bin`
+---
 
-To your path environment variable so that the compiler that came with raylib can be found.
+## วิธีการใช้งาน (Usage)
+1. **เริ่มโปรแกรม**: กดปุ่ม "Begin Reading" ในหน้าจอเริ่มต้น  
+   ![หน้าจอเริ่มต้น](screenshots/start.png)
 
-DO NOT INSTALL ANOTHER MinGW-W64 from another source such as msys2, you don't need it.
+2. **เลือกไพ่**: คลิกไพ่ตามลำดับ (Past → Present → Future)  
+   ![เลือกไพ่](screenshots/select.png)
 
-## Microsoft Visual Studio
-* Run `build-VisualStudio2022.bat`
-* double click the `.sln` file that is generated
-* develop your game
-* you are good to go
+3. **อ่านคำทำนาย**: คำทำนายจะแสดงในกรอบการ์ดแต่ละใบ  
+   ![คำทำนาย](screenshots/prediction.png)
 
-# Linux Users
-* CD into the build folder
-* run `./premake5 gmake2`
-* CD back to the root
-* run `make`
-* you are good to go
+---
 
-# MacOS Users
-* CD into the build folder
-* run `./premake5.osx gmake2`
-* CD back to the root
-* run `make`
-* you are good to go
+## เทคนิคที่ใช้ (Technologies)
+- **ภาษาโปรแกรม**: C (C11 Standard)
+- **ไลบรารีกราฟิก**: [Raylib](https://www.raylib.com/) + [RayGUI](https://github.com/raysan5/raygui)
+- **เครื่องมือ**: CMake, Git
+- **แนวคิดการเขียนโปรแกรม**:
+  - Selection Statements (`if-else`)
+  - Loop Statements (`for`, `while`)
+  - Arrays & Strings
+  - Functions & Modular Programming
 
-# Output files
-The built code will be in the bin dir
+---
 
-# Working directories and the resources folder
-The example uses a utility function from `path_utils.h` that will find the resources dir and set it as the current working directory. This is very useful when starting out. If you wish to manage your own working directory you can simply remove the call to the function and the header.
+## ผู้พัฒนา (Developer)
+- **ชื่อ**: [Peeraphat]  
+- **รหัสนักศึกษา**: [1670903192]  
+- **วิชา**:  CE213
+- **GitHub**: [your-github-link](https://github.com/yourusername)
 
-# Changing to C++
-Simply rename `src/main.c` to `src/main.cpp` and re-run the steps above and do a clean build.
+---
 
-# Using your own code
-Simply remove `src/main.c` and replace it with your code, and re-run the steps above and do a clean build.
+# Mystic Tarot Reader 🔮  
+**Interactive Tarot Card Fortune Telling Program**  
 
-# Building for other OpenGL targets
-If you need to build for a different OpenGL version than the default (OpenGL 3.3) you can specify an OpenGL version in your premake command line. Just modify the bat file or add the following to your command line
+## 📜 Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
 
-## For OpenGL 1.1
-`--graphics=opengl11`
+---
 
-## For OpenGL 2.1
-`--graphics=opengl21`
+## Features
+- 🃪 Draw 3 Tarot Cards (Past-Present-Future)
+- 🔍 Display Detailed Predictions In-Card
+- 🎨 Beautiful GUI with Raylib
+- 🎲 Random Pastel Card Colors
+- 📊 Real-Time Summary Panel
 
-## For OpenGL 4.3
-`--graphics=opengl43`
+---
 
-## For OpenGLES 2.0
-`--graphics=opengles2`
+## Installation
+### Prerequisites
+- [CMake](https://cmake.org/) (v3.10+)
+- [Raylib](https://www.raylib.com/) (v4.5+)
 
-## For OpenGLES 3.0
-`--graphics=opengles3`
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/mystic-tarot-reader.git
+   ```
+2. Build the project:
+   ```bash
+   cd mystic-tarot-reader
+   mkdir build && cd build
+   cmake ..
+   cmake --build . --config Release
+   ```
+3. Run the program:
+   - Windows: `build/Release/FinalProject.exe`
+   - Linux/macOS: `./FinalProject`
 
-# License
-Copyright (c) 2020-2025 Jeffery Myers
+---
 
-This software is provided "as-is", without any express or implied warranty. In no event 
-will the authors be held liable for any damages arising from the use of this software.
+## Usage
+1. **Start**: Click "Begin Reading" on the start screen.  
+   ![Start Screen](screenshots/start.png)
 
-Permission is granted to anyone to use this software for any purpose, including commercial 
-applications, and to alter it and redistribute it freely, subject to the following restrictions:
+2. **Select Cards**: Click cards in order (Past → Present → Future).  
+   ![Card Selection](screenshots/select.png)
 
-  1. The origin of this software must not be misrepresented; you must not claim that you 
-  wrote the original software. If you use this software in a product, an acknowledgment 
-  in the product documentation would be appreciated but is not required.
+3. **Read Predictions**: Detailed predictions appear inside each card.  
+   ![Predictions](screenshots/prediction.png)
 
-  2. Altered source versions must be plainly marked as such, and must not be misrepresented
-  as being the original software.
+4. **Summary**: Final results show at the bottom after selecting all 3 cards.  
+   ![Summary](screenshots/summary.png)
 
-  3. This notice may not be removed or altered from any source distribution.
+---
+
+## Technologies
+- **Language**: C (C11 Standard)
+- **Graphics**: [Raylib](https://www.raylib.com/) + [RayGUI](https://github.com/raysan5/raygui)
+- **Tools**: CMake, Git
+- **Programming Concepts**:
+  - Selection Statements (`if-else`)
+  - Loop Statements (`for`, `while`)
+  - Arrays & Strings
+  - Functions & Modular Programming
