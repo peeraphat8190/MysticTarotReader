@@ -123,10 +123,10 @@
    ![Start Screen](screenshots/start.png)
 
 2. **Select Cards**: Click cards in order (Past → Present → Future).  
-   ![Card Selection](screenshots/select.png)
+   ![Card Selection](screenshots/prediction.png)
 
 3. **Read Predictions**: Detailed predictions appear inside each card.  
-   ![Predictions](screenshots/prediction.png)
+   ![Predictions](screenshots/select.png)
 
 ---
 
