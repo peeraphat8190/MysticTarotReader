@@ -28,7 +28,7 @@
 ### ขั้นตอน (Steps)
 1. โคลนโปรเจกต์:
    ```bash
-   git clone https://github.com/yourusername/mystic-tarot-reader.git
+   git clone https://github.com/peeraphat8190/MysticTarotReader.git
    ```
 2. สร้างโฟลเดอร์ build และคอมไพล์:
    ```bash
@@ -71,7 +71,7 @@
 - **ชื่อ**: [Peeraphat]  
 - **รหัสนักศึกษา**: [1670903192]  
 - **วิชา**:  CE213
-- **GitHub**: [your-github-link](https://github.com/yourusername)
+- **GitHub**: (https://github.com/peeraphat8190)
 
 ---
 
@@ -103,7 +103,7 @@
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/mystic-tarot-reader.git
+   git clone https://github.com/peeraphat8190/MysticTarotReader.git
    ```
 2. Build the project:
    ```bash
